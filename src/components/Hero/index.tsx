@@ -10,7 +10,7 @@ const Hero = () => {
   return (
     <>
     <EasterEggHint/>
-      <div className="flex flex-col-reverse lg:flex-row items-center justify-center min-h-screen relative px-20">
+      <div className="flex flex-col-reverse lg:flex-row items-center justify-center min-h-screen relative md:px-20 lg:pl-25">
         {/* Left Side (Text Section) */}
         <motion.div
           initial={{ opacity: 0, x: -50 }}
@@ -89,7 +89,7 @@ const Hero = () => {
             repeat: Infinity,
             ease: "easeInOut",
           }}
-          className=" h-1/2 flex justify-center lg:justify-start w-full"
+          className=" h-1/2 flex justify-center lg:justify-end w-full"
         >
           <img
             src={MainShape}
