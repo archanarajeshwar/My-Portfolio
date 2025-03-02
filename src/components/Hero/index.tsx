@@ -10,7 +10,7 @@ const Hero = () => {
   return (
     <>
     <EasterEggHint/>
-      <div className="flex flex-col-reverse lg:flex-row items-center justify-center min-h-screen relative md:px-20 lg:pl-25">
+      <div className="flex flex-col-reverse lg:flex-row items-center justify-center min-h-screen relative sm:px-10 md:px-20 lg:pl-25">
         {/* Left Side (Text Section) */}
         <motion.div
           initial={{ opacity: 0, x: -50 }}
