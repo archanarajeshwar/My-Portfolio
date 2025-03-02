@@ -57,7 +57,7 @@ const Card: React.FC<CardProps> = ({ title, description, technologies }) => {
               className="inline-block bg-indigo-300 rounded-full px-3 py-1 
                         text-sm font-semibold text-indigo-950 shadow-sm"
             >
-              #{tech}
+              {tech}
             </span>
           ))}
         </div>

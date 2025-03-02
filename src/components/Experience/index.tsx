@@ -48,15 +48,23 @@ const Experience = () => {
         {/* Experience Cards with Sequential Motion Effect */}
         {EXPERIENCES.map((experience, index) => (
           <motion.div
-            key={index}
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 0.8, y: 0 }}
-            viewport={{ once: true }}
-            transition={{
-              duration: 1,
-              delay: index * 0.5, // Ensures they appear one after another
-              ease: "easeOut",
-            }}
+          key={index}
+          initial={{ opacity: 0, y: 50 }}
+          whileInView={{ 
+            opacity: 0.8, 
+            y: 0,
+          }}
+          viewport={{ 
+            once: true,
+            margin: "0px 0px -200px 0px" 
+          }}
+          transition={{
+            type: "spring",
+            stiffness: 50,
+            damping: 20,
+            mass: 1,
+            delay: index * 0.15
+          }}
             className={`relative w-full max-w-xs md:max-w-md lg:w-[350px] p-5 md:p-6 
                         bg-indigo-500/20 backdrop-blur-lg border border-indigo-400 
                         rounded-lg shadow-lg transition-all
