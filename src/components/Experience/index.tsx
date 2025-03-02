@@ -54,10 +54,13 @@ const Experience = () => {
           exit={{ opacity: 0, y: 0 }}
           viewport={{ once: true, margin: "-100px" }}
           transition={{
-            duration: 1.2,
-            delay: index * 0.12,
-            ease: "easeOut", // Changed from easeOut for smoother transitions
+            type: "spring",
+            stiffness: 80,
+            damping: 25,    // Higher = smoother stop
+            duration: 0.6,
+            delay: index * 0.10,
           }}
+          
             className={`relative w-full max-w-xs md:max-w-md lg:w-[350px] p-5 md:p-6 
                         bg-indigo-500/20 backdrop-blur-lg border border-indigo-400 
                         rounded-lg shadow-lg transition-all
