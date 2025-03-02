@@ -152,7 +152,7 @@ const About = () => {
           ))}
         </motion.div>
       </motion.div>
-      <div className=" absolute ml-2 bottom-0.7/2">
+      <div className=" absolute ml-7 bottom-0.7/2">
         <EasterEgg />
       </div>
     </section>

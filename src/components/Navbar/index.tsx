@@ -62,7 +62,7 @@ const Navbar = () => {
             initial={{ opacity: 0, y: -10 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.3 }}
-            className="absolute top-full left-0 w-full bg-slate-800 p-3 rounded-b-lg text-center"
+            className="absolute top-full left-0 w-full bg-indigo-800 p-3 rounded-b-lg text-center"
           >
             {navLinks.map((link, index) => (
               <motion.button

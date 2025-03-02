@@ -44,7 +44,7 @@ const Hero = () => {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1.2, delay: 0.7 }}
-            className="text-2xl text-indigo-200 font-semibold mt-2"
+            className="lg:text-2xl md:text-2xl sm:text-1xl  text-indigo-200 font-semibold mt-2"
           >
             <TypeAnimation
               sequence={[
@@ -89,11 +89,11 @@ const Hero = () => {
             repeat: Infinity,
             ease: "easeInOut",
           }}
-          className="mb-5 h-1/2 flex justify-center lg:justify-start w-full"
+          className=" h-1/2 flex justify-center lg:justify-start w-full"
         >
           <img
             src={MainShape}
-            className="w-3/4 sm:w-2/3 md:w-2/3 lg:w-[90%] xl:w-[120%] max-w-2xl"
+            className="w-3/4 sm:w-2/3 md:w-2/3 lg:w-[90%] xl:w-[90%] max-w-2xl"
             alt="Logo"
           />
         </motion.div>
