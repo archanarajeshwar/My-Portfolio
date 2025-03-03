@@ -89,7 +89,7 @@ const Experience = () => {
                   className="bg-white/20 backdrop-blur-sm border border-cyan-300/30 rounded-full 
                             px-2 py-1 text-xs font-semibold text-white shadow-sm"
                 >
-                  #{tech}
+                  {tech}
                 </span>
               ))}
             </div>

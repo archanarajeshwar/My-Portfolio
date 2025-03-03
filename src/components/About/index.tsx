@@ -152,7 +152,7 @@ const About = () => {
           ))}
         </motion.div>
       </motion.div>
-      <div className=" absolute ml-7 bottom-0.7/2">
+      <div className=" lg:absolute md:absolute md:ml-7 md:bottom-0.7/2 lg:bottom-0.7/2 lg:ml-7 sm:flex sm:justify-center">
         <EasterEgg />
       </div>
     </section>
