@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { useEasterEgg } from "../../EasterEgg/EasterEggContext";
+import { MoveDown } from 'lucide-react';
 
 const EasterEggHintArrow = () => {
   const [showHint, setShowHint] = useState(false);
@@ -26,7 +27,7 @@ const EasterEggHintArrow = () => {
         animate={{ y: [0, 10, 0] }}
         transition={{ repeat: Infinity, duration: 1.5, ease: "easeIn" }}
       >
-        ⬇
+       <MoveDown strokeWidth={3}/>
       </motion.span>
 
       {/* Popup Hint */}
