@@ -27,7 +27,7 @@ const EasterEggHintArrow = () => {
         animate={{ y: [0, 10, 0] }}
         transition={{ repeat: Infinity, duration: 1.5, ease: "easeIn" }}
       >
-       <MoveDown strokeWidth={3}/>
+       <MoveDown strokeWidth={3} height={30}/>
       </motion.span>
 
       {/* Popup Hint */}
